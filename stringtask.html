@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <script>
+
+let str = "   MOTAZ RAFIQ ALNASER  ";
+console.log("Original string:", "${str}");
+
+// trim()
+console.log("Trim:", "${str.trim()}");
+
+// trimStart()
+console.log("TrimStart:", "${str.trimStart()}");
+
+// trimEnd()
+console.log("TrimEnd:", "${str.trimEnd()}");
+
+// padStart()
+console.log("PadStart(30, '*'):", "${str.trim().padStart(30, '*')}");
+
+// padEnd()
+console.log("PadEnd(30, '*'):", "${str.trim().padEnd(30, '*')}");
+
+// charAt()
+console.log("charAt(6):", str.charAt(6));
+
+// charCodeAt()
+console.log("charCodeAt(6):", str.charCodeAt(6));
+
+// split()
+console.log("Split by space:", str.trim().split(" "));
+
+// length
+console.log("String length:", str.length);
+
+// slice()
+console.log("Slice(3, 15):", str.slice(3, 15));
+
+// substring()
+console.log("Substring(3, 15):", str.substring(3, 15));
+
+// substr()
+console.log("Substr(3, 12):", str.substr(3, 12));
+
+// replace()
+console.log("Replace 'World' with 'JS':", str.replace("World", "JS"));
+
+// replaceAll()
+console.log("ReplaceAll 'l' with 'L':", str.replaceAll("l", "L"));
+
+// toUpperCase()
+console.log("ToUpperCase():", str.toUpperCase());
+
+// toLowerCase()
+console.log("ToLowerCase():", str.toLowerCase());
+
+// concat()
+console.log("Concat with '!!!':", str.concat("!!!"));
+
+// indexOf()
+console.log("IndexOf 'JavaScript':", str.indexOf("JavaScript"));
+
+// lastIndexOf()
+console.log("LastIndexOf 'l':", str.lastIndexOf("l"));
+
+// search()
+console.log("Search 'JavaScript':", str.search("JavaScript"));
+
+// match()
+console.log("Match 'l' globally:", str.match(/l/g));
+
+// matchAll()
+console.log("MatchAll 'l':", Array.from(str.matchAll(/l/g)));
+
+// includes()
+console.log("Includes 'Hello':", str.includes("Hello"));
+
+// startsWith()
+console.log("StartsWith '   Hello':", str.startsWith("   Hello"));
+
+// endsWith()
+console.log("EndsWith '!   ':", str.endsWith("!   "));
+  </script>
+</body>
+</html>
